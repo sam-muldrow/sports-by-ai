@@ -25,7 +25,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
           });
           
         } else {
-            const something = await auth0Client.handleRedirectCallback();
             window.location.replace(
                 "https://sports-by-ai.web.app/auth.html"
               );
