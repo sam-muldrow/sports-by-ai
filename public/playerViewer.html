@@ -1,27 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link href="./styles/style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NBA Player Data Explorer</title>
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-  </head>
-  <body>
-    <img src="./images/logo.png" id="logo">
-    <h1>NBA Player Data Explorer</h1>
-    <h2>Search For Player</h2>
-    <div class="flexContainer">
-      <div class="searchDiv">
-        <div class="searchBar">
-          <input type="text" id="searchBar" />
-        </div>
-        <div class="outputDisplay" id="outputDisplay">
-          <ul id="outputDisplayList"></ul>
-        </div>
-      </div>
-      <div class="viewerDiv">
+<!DOCTYPE html>
+    <head>
+        <link href="./styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="index.html"><img src="./images/logo.png" id="logo"></a>
         <h1 id="playerName"></h1>
         <h2 id="playerTeam"></h2>
         <h2 id="playerCity"></h2>
@@ -51,9 +33,6 @@
             <div id="positionName">Position Name: <span id="positionNameSpan"></span></div>
             <div id="collegeName">College: <span id="playerCollegeNameSpan"></span></div>
         </div>
-      </div>
-    </div>
-
-    <script type="module" src="/js/search.js" ></script>
-  </body>
+    </body>
+    <script src="./js/playerViewer.js"></script>
 </html>

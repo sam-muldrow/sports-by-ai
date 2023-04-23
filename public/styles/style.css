@@ -1,0 +1,219 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Search bar styles */
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  #searchBar {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 80%;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Output display container styles */
+  .outputDisplay {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Output display list styles */
+  #outputDisplayList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Output display list item styles */
+  #outputDisplayList li {
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+  }
+  
+  /* Output display list item hover styles */
+  #outputDisplayList li:hover {
+    background-color: #555;
+  }
+  
+  /* Player Viewer styles */
+  #playerName {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #playerTeam {
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #playerCity {
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #playerImg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  #playerStats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #252529;
+    flex-direction: column;
+  }
+  
+  #playerStatsHeader {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #avgPtsDiv,
+  #avgRebDiv,
+  #avgAstDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #avgPtsDiv div,
+  #avgRebDiv div,
+  #avgAstDiv div {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  #avgPtsText,
+  #avgRebText,
+  #avgAstText {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  #outputDisplayList li:nth-child(odd) {
+    background-color: #1c1c1e;
+  }
+  
+  #outputDisplayList li:nth-child(even) {
+    background-color: #252529;
+  }
+
+  #playerInfo {
+    margin-top: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1c1c1e;
+  }
+  
+  #positionName,
+  #collegeName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #positionName span,
+  #collegeName span {
+    font-weight: bold;
+  }
+
+  #logo {
+    width: 5%;
+  }
+  
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .login-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .login-button {
+      background-color: #fff;
+      color: #333;
+    }
+  
+    .login-button:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
