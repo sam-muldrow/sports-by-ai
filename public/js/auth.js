@@ -20,20 +20,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           await auth0Client.handleRedirectCallback();
           window.history.replaceState({}, document.title, "/");
         }
-      
-        // Assumes a button with id "logout" in the DOM
-        const logoutButton = document.getElementById("logout");
-      
-        logoutButton.addEventListener("click", (e) => {
-          e.preventDefault();
-          auth0Client.logout();
-        });
-      
-        const isAuthenticated = await auth0Client.isAuthenticated();
-        const userProfile = await auth0Client.getUser();
-      
-        // Assumes an element with id "profile" in the DOM
-        const profileElement = document.getElementById("profile");
+    
       
       });
   });
