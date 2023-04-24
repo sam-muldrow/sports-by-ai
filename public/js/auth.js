@@ -20,7 +20,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
           await auth0Client.handleRedirectCallback();
           window.history.replaceState({}, document.title, "/");
         }
-    
-      
       });
   });

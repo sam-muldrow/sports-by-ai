@@ -25,9 +25,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
           });
           
         } else {
-            window.location.replace(
-                "https://sports-by-ai.web.app/auth.html"
-              );
+            try {
+                const something = await auth0Client.handleRedirectCallback();
+            } catch (error) {
+                window.location.replace(
+                    "https://sports-by-ai.web.app/auth.html"
+                  );
+            }
         }
 
         
