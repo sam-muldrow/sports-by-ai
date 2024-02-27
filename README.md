@@ -1,6 +1,8 @@
 # Sports Stats Web Application
 A web application to display NBA player data
+
 ##Features
+
 - Auth0 authentication
 - NBA player search functionality via NBA API
 - NBA thumbnail images via NBA API
